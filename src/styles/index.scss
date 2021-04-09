@@ -1,0 +1,189 @@
+
+@import "common.scss";
+@import "font/iconfont.css";
+@import "animate.css";
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+// .text-sm{
+//     font-size: 11px;
+// }
+
+.text-m{
+    font-size: 16px;
+}
+
+.m-t5{
+    margin-top: 5px;
+}
+
+.m-t15{
+    margin-top: 15px;
+}
+
+.m-t30{
+    margin-top: 30px;
+}
+
+.m-b5{
+    margin-bottom: 5px;
+}
+
+.m-b15{
+    margin-bottom: 15px;
+}
+
+.m-b90{
+    margin-bottom: 90px;
+}
+
+.p-l15{
+    padding-left: 15px;
+}
+
+.p-r15{
+    padding-right: 15px;
+}
+
+.p-l16{
+    padding-left: 16px;
+}
+
+.p-t10{
+    padding-top: 10px;
+}
+
+.p-t50{
+    padding-top: 50px;
+}
+
+.p-b15{
+    padding-bottom: 15px;
+}
+
+a{
+    color:#8d8b8b
+}
+
+.default-color{
+    color: #ff5f16;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-ellipsis{
+    width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.float-right{
+    float: right;
+}
+
+.box-center{
+    margin: 0 auto;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-sm{
+    padding: 15px;
+}
+
+.movie-nav {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #eee;
+    height: 50px;
+    line-height: 50px;
+}
+
+.movie-nav .router-link-active {
+    color: #000;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ff5f16;
+}
+
+#nowplaying {
+    padding-bottom: 50px;
+}
+
+#nowplaying ul {
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+}
+
+#nowplaying ul li {
+    /* margin-bottom: 5px; */
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#nowplaying ul li img {
+    width: 66px;
+    margin-right: 5px;
+}
+
+.right-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-content button {
+    background-color: #fff;
+    border: 1px solid #ff5f16;
+    color: #ff5f16;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.m-t10{
+    margin-top: 10px;
+}
+
+
+// 组件切换时的动画不管用
+.fade-enter-active{
+    animation:fadeInDown 0.8s;
+}
+.fade-leave-active{
+    animation:fadeOutDown 0.8s;
+}
+
+@keyframes enter{
+    from{opacity: 0;transform: translateY(-10%);}
+    to{opacity: 1;transform: translateY(0%);}
+}
+
+@keyframes leave{
+    from{opacity: 1;transform: translateY(0%);}
+    to{opacity: 0;transform: translateY((10%));}
+}
+
+.enter{
+    animation: enter .6s;
+}
+.leave{
+    animation: leave .6s;
+}
